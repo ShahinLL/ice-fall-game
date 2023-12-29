@@ -71,7 +71,9 @@ def draw(player, ice, time_elapse):
     pygame.display.update()
 
 def get_random_x():
-    return random.randint(0, Width - ice_width)
+    min_x = 100
+    max_x = 600
+    return random.randint(min_x, max_x)
 
 def main():
     global hit
